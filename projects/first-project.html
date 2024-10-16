@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .logo{
+            width: 100px;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+            color:#fff;
+            font-weight: 600;
+            text-shadow: 2px  2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .header{
+            background-color: #8a4af3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .header nav{
+            display: flex;
+            align-items: center;
+        }
+        .header nav a{
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size:16px;
+        }
+        .search-bar {
+            border: none;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        .search-bar input{
+            background-color: white;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+        .header nav a:hover{
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">DAPPR</div>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Information</a>
+            <a href="">More</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-box" placeholder="Search....">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="menu-icon">
+            <i style="font-size : 30px; color:#fff;" class="fas fa-bars"></i>
+        </div>
+    </div>
+</body>
+</html>
