@@ -109,7 +109,7 @@
         .info{
             display: flex;
             background-color: #0b3dd4;
-            height: 500px;
+            height: 400px;
             margin: 100px 80px 0;
             padding: 20px;
             border-radius: 10px;
@@ -143,6 +143,73 @@
             width: 65%;
             padding: 20px;
             border-radius: 10px;
+        }
+        .info-box{
+            position: relative;
+            width: 100%;
+            font-size: 16px;
+        }
+        .title{
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        .next-button{
+            float: right;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            height: 40px;
+            width: 100px;
+            border-radius: 5px;
+        }
+        .chat-icon {
+            height: 50px;
+            width: 50px;
+            position: fixed;
+            right: 100px;
+            bottom: 5px;
+            border-radius: 50%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgb(87, 85, 85);
+        }
+        .chat-icon i{
+            font-size: 30px;
+        }
+        .social-icons{
+            position: fixed;
+            top: 50%;
+            right: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateY(-50%);
+        }
+        .social-icons a{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0;
+            color: white;
+            font-size: 20px;
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            background-color: #1ba226;
+            border-radius: 5px;
+        }
+        .social-icons a.facebook {
+            background-color: #3b5998;
+        }
+        .social-icons a.twitter {
+            background-color: #1da1f2;
         }
 
     </style>
@@ -203,14 +270,22 @@
             <div  class="info-text">
                 <div class="info-box">
                     <h2>Your information</h2>
-                    <p>Name : Atul Singhal</p>
-                    <p>Email : atul@gmail.com</p>
-                    <p>Phone : +91 8131424888</p>
-                    <p>Marks : 500.00</p>
+                    <p><span class="title">Name</span> : Atul Singhal</p>
+                    <p><span class="title">Email</span> : atul@gmail.com</p>
+                    <p><span class="title">Phone</span> : +91 8131424888</p>
+                    <p><span class="title">Marks</span> : 500.00</p>
                     <button class="next-button">Next →</button>
                 </div>
             </div>
         </div>
-    </div>    
+    </div>   
+    <div class="social-icons">
+        <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="chat-icon">
+        <i class="fas fa-comment"></i>
+    </div> 
 </body>
 </html>
