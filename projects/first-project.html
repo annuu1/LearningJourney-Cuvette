@@ -183,13 +183,14 @@
             font-size: 30px;
         }
         .social-icons{
-            position: fixed;
-            top: 50%;
+            position: sticky;
+            top: 50px;
             right: 0px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            transform: translateY(-50%);
+            justify-content: center;
+            float:right;
+            
         }
         .social-icons a{
             text-decoration: none;
@@ -243,6 +244,11 @@
                 </p>
             </div>
         </div>
+        <div class="social-icons">
+            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        </div>
         <div  class="stats">
             <div class="stat" style="background-color: #4a74f3;">
                 <p>Total Question's</p>
@@ -279,11 +285,7 @@
             </div>
         </div>
     </div>   
-    <div class="social-icons">
-        <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-    </div>
+
     <div class="chat-icon">
         <i class="fas fa-comment"></i>
     </div> 
