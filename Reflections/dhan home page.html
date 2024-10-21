@@ -53,7 +53,7 @@
         }
         article{
             width: 75%;
-            background-color: #7e7373;
+            background-color: #f5f5f5;
             display: flex;
             flex-direction: column;
         }
@@ -132,13 +132,16 @@
             padding: 0px 10px;
         }
         .funds{
+            background-color: #feebebea;
+        }
+        .funds-card-container{
             display: flex;
             gap: 10px;
             margin: 10px 0;
         }
-        .funds .funds-card{
+        .funds-card-container .funds-card{
             width: 20%;
-            background-color: #ddd;
+            padding: 5px;
         }
         .dhan-tools{
             display: flex;
@@ -146,7 +149,16 @@
         }
         .dhan-tools .dhan-tools-card{
             width: 20%;
+            padding: 10px;
             background-color: #ddd;
+            border: 1px solid#e73939;
+            cursor: pointer;
+            transition:1s;
+            border-radius: 5px;
+        }
+        .dhan-tools .dhan-tools-card:hover{
+            background: linear-gradient(to right,  #f7e5e5, #f08c8c);
+            transform: scale(1.05);
         }
         .market-watch{
             display: flex;
@@ -262,17 +274,19 @@
             </div>
             <div class="funds">
                 <h3>Money in Dhan</h3>
-                <div class="funds-card">
-                    <div class="title">Available for Investing</div>
-                    <div class="value rupee-symbol">24.36</div>
-                </div>
-                <div class="funds-card">
-                    <div class="title">Available for Investing</div>
-                    <div class="value rupee-symbol">24.36</div>
-                </div>
-                <div class="funds-card">
-                    <div class="title">Available for Investing</div>
-                    <div class="value rupee-symbol">24.36</div>
+                <div class="funds-card-container">
+                    <div class="funds-card">
+                        <div class="title">Available for Investing</div>
+                        <div class="value rupee-symbol">24.36</div>
+                    </div>
+                    <div class="funds-card">
+                        <div class="title">Available for Investing</div>
+                        <div class="value rupee-symbol">24.36</div>
+                    </div>
+                    <div class="funds-card">
+                        <div class="title">Available for Investing</div>
+                        <div class="value rupee-symbol">24.36</div>
+                    </div>
                 </div>
             </div>
             <div class="dhan-tools">
