@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  box-sizing: border-box;  
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: url("https://www.gstatic.com/webp/gallery/4.webp") no-repeat;
+    background-size: cover;
+}
+.overley{
+    font-size: 2rem;
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.overley > *{
+    margin-top: 50px;
+}
+.display-time{
+    display: flex;
+    gap: 30px;
+}
+.display-time p{
+    font-weight: bolder;
+    text-shadow: 0 0 5px rgb(1, 112, 7);
+    box-shadow: 0 0 50px #e06e6e;
+    border: none;
+    padding: 10px 50px;
+    background-color: #b30b0b;
+    color: rgb(255, 255, 255);
+    margin: 15px;
+    border-radius: 30px;
+}
