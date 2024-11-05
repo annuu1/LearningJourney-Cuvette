@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Array Operations
+
+
+
+    <script>
+    // Ques 1
+    
+    const arr1 = [12,32,34,90, 59,60,70]
+        let findMax = function (arr){
+            return arr1.reduce((max, item)=>
+            max > item ? max : item
+        )
+    }
+    console.log(findMax());
+
+
+    //Ques 2
+    const arr2 = [12,12,12,1254,54,54,54,54,5,5,5,5,5,5,5,5,5,5,5,54]
+    ountOccurrences(arr2,5)
+
+    function ountOccurrences(arr, num){
+        count =
+            arr.reduce((accu, item)=>{               
+                return item===num?++accu:accu
+            }, 0)
+        console.log(count);
+        
+        return count
+    }
+    
+    // Ques 3
+
+    const arr3 = [1,2,3,4,5,6,7,8,9,10, 12]
+    let evenArr  =  filterEvens(arr3)
+
+    console.log(evenArr);
+    
+
+    function filterEvens(arr){
+        return arr.filter((num)=>num%2==0)
+    }
+
+    </script>
+</body>
+</html>

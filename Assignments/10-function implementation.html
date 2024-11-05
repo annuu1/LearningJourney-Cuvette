@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Function Implementation</h1>    
+
+
+<script>
+    const products = [
+{ name: "Laptop", category: "Electronics", price: 1200 },
+{ name: "Phone", category: "Electronics", price: 800 },
+{ name: "Shoes", category: "Fashion", price: 100 },
+{ name: "Shirt", category: "Fashion", price: 500 },
+];
+
+
+function filterProducts(products, price) {
+    return products.filter(product => product.price<=price)
+}
+let filteredProducts = filterProducts(products, 1000)
+let discountedProducts = discountedPrice(filteredProducts, 10)
+let tatalAmt = totalDiscountedPrice(discountedProducts)
+
+console.log(JSON.stringify(filterProducts(products, 1000)))
+console.log(discountedProducts);
+console.log(tatalAmt);
+
+function discountedPrice(products, discPct){
+    let discountedProducts = products.map(product=>{
+        let discountedPrice = product.price*(1-discPct/100)
+        return {
+            name:product.name,
+            category:product.category,
+            price:discountedPrice
+        }
+    })
+    return discountedProducts
+    }
+
+function totalDiscountedPrice(products) {
+    return products.reduce((acc, product)=> acc+product.price,0)
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Modification Assignment</h1>
+    <div id="display-obj"></div>
+    
+    <script>
+
+        const originalObj = document.getElementById("display-obj")
+        const obj1 = {
+            objType: 'original',
+            name:"anurag",
+            age:21,
+            address:{
+                town:"Sandi",
+                dist:"hardoi",
+                pin:"241403"
+            }
+        }
+
+        displayObj(obj1)
+
+        let obj2 = modifyObject(obj1);
+
+        function displayObj(obj){
+            Object.entries(obj).forEach(([key, value])=>{
+                let itemElement = document.createElement("p")
+                itemElement.textContent = `${key}: ${JSON.stringify(value)}`
+                originalObj.appendChild(itemElement)
+            })
+            originalObj.appendChild(document.createElement("hr"))
+        }
+        function modifyObject(obj){
+            let newObj = JSON.parse(JSON.stringify(obj))
+            newObj.objType = "Modified"
+            newObj.name = "Rahul"
+            newObj.age = 25
+            newObj.address.town = "Sitapura"
+            newObj.address.dist = "Jaipur"
+            newObj.address.pin = "302022"
+            return newObj
+        }
+
+        displayObj(obj2)
+    </script>
+</body>
+</html>
