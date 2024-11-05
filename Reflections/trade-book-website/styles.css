@@ -1,0 +1,64 @@
+/* Basic Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+#add-trade form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#add-trade form input,
+#add-trade form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Table Styling */
+#trade-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#trade-table th,
+#trade-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#trade-table th {
+    background-color: #f0f0f0;
+}
+
+/* Summary Styling */
+#portfolio-summary {
+    margin-top: 20 px;
+}
+
+#portfolio-summary div {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}

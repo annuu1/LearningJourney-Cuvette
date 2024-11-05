@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customizable Trade Book</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ... [header] -->
+
+    <main>
+      <section id="table-settings">
+        <h2>Customize Your Table</h2>
+        <div id="column-options">
+          <!-- Default column options will be loaded here -->
+        </div>
+        <button id="add-column">Add Column</button>
+      </section>
+
+      <section id="add-trade">
+        <h2>Add New Trade</h2>
+        <form id="trade-form">
+            <input type="hidden" id="trade-id" name="trade-id">
+            <label for="stock-symbol">Stock Symbol:</label><br>
+            <input type="text" id="stock-symbol" name="stock-symbol"><br><br>
+
+            <!-- ... [Other input fields] -->
+
+            <input type="submit" value="Add Trade">
+        </form>
+    </section>
+
+      <section id="trade-list">
+        <h2>Trade History</h2>
+        <table id="trade-table">
+          <thead>
+            <tr id="table-header">
+              <!-- Columns will be dynamically added here -->
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Trade data will be added here -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ... [Portfolio Summary] -->
+
+    </main>
+
+    <!-- ... [footer] -->
+
+  <script src="scripts.js"></script>
+</body>
+</html>
