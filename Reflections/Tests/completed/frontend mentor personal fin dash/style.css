@@ -1,0 +1,178 @@
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #dark{
+            color: #fff;
+            background-color: #333;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            background-color: #f1f1f1;
+        }
+        nav{
+            background-color: #333;
+            width: 20%;
+            height: 100vh;
+        }
+        nav .nav-list{
+            margin-left: 10px;
+        }
+        nav .nav-list ul{
+            list-style-type: none;
+        }
+        nav .nav-list li{
+            margin: 5px;
+            display: block;
+            padding: 10px;
+        }
+        nav .nav-list li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        main{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        main .title{
+            display: flex;
+            flex-direction: column;
+        }
+        main .title > div{
+            height: 50%;
+        }
+        main .title .overview-title{
+            font-size: 34px;
+            font-weight: bolder;
+            padding-top: 20px;
+        }
+        .card-title{
+            color: #b3abab;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .card-value{
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        main .title .overview-cards{
+            display: flex;
+            justify-content: space-between;
+        }
+        main .title .overview-card{
+            border-radius: 15px;
+            margin-right: 20px;
+            padding: 15px 20px;
+            width: 30%;
+            background-color: #ffffff;
+        }
+        #selected-button{
+            background-color: brown;
+        }
+        main .content{
+            display: flex;
+            gap: 20px;
+        }
+        main .content article{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #expenses-card{
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+        }
+        #expenses-card .pots-head{
+            display: flex;
+            justify-content: space-between;
+        }
+        #expenses-card .pots-cards{
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #expenses-card .pots-cards > div{
+            padding: 1rem 3rem 1rem 1rem;
+            border-radius: 5px;
+            background-color: #eee;
+        }
+        #transactions{
+            width: 100%;
+            background-color: #fff;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        #transactions .transaction-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        #transactions .transaction-header a{
+            text-decoration: none;
+        }
+        #transactions .transaction{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+        }
+        #transactions .info{
+            display: flex;
+            gap: 5px;
+            width: 100%;
+        }
+        #transactions .info img{
+            margin: 5px;
+            background-color: rgb(159, 165, 159);
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+        }
+        #transactions .info .name{
+            display: flex;
+            align-items: center;
+        }
+
+        #transactions .amount-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        #transactions .amount-card .amount{
+            font-weight: bold;
+        }
+        .amount-addon{
+            color: rgb(41, 184, 41) !important;
+        }
+
+        main .content aside{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-right: 20px;
+        }
+        #budget{
+            border-radius: 15px;
+            width: 100%;
+            height: 50%;
+            background-color: #fff;
+        }
+        #recurring-bills{
+            border-radius: 15px;
+            width: 100%;
+            height: 50%;
+            background-color: #fff;
+        }
