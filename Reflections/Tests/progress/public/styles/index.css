@@ -1,0 +1,5 @@
+*{
+    color: rgb(165, 0, 0);
+    font-size: larger;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(163, 255, 167) 65%, rgb(135, 235, 255) 100%);
+}
