@@ -1,14 +1,24 @@
 let lastValue = "";
 function appendToDisplay(value) {
+    
     let displayVal = document.getElementById('display').value ;
+    
     if(!displayVal) {
         if(value==="*" || value==="/" || value==="+") {
-            document.getElementById('display').value = "value";
+            console.log("Nothing is going to display...");
+            return
         }
        }
     else {
-        document.getElementById('display').value += value;
+        if(isOperator(value) && isOperator(lastValue)) {
+            displayVal = displayVal.slice(0, -1)+value;
+            document.getElementById('display').value = displayVal;
+            
+            return
+        }
        }
+       document.getElementById('display').value += value;
+    lastValue = value;
 }
 
 function clearDisplay() {
@@ -22,4 +32,7 @@ function calculateResult() {
     } catch (error) {
         display.value = 'Error';
     }
+}
+function isOperator(value) {
+    return ['+', '-', '*', '/'].includes(value);
 }

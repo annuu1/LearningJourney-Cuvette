@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .logo{
+            width: 100px;
+            font-family: Comic Sans MS, Comic Sans, cursive;
+            color:#fff;
+            font-weight: 600;
+            text-shadow: 2px  2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .header{
+            background-color: #8a4af3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+           
+        }
+        .header nav{
+            display: flex;
+            align-items: center;
+        }
+        .header nav a{
+            color: #fff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size:16px;
+        }
+        .search-bar {
+            border: none;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        .search-bar input{
+            background-color: white;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+        .header nav a:hover{
+            text-decoration: underline;
+        }
+        .content{
+            display: flex;
+            height: 300px;
+            margin: 100px 80px 0;
+        }
+        .content .image{
+            width: 35%;
+            height: 100%;
+            border-radius: 15px;
+            background-color: #f0f0f0;
+            margin-right: 10px;
+        }
+        .content .image img{
+            box-shadow: 0 0 8px;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+        .content .text{
+            box-shadow: 0 0 8px;
+            width: 65%;
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            color: #c688ec;
+            margin-left: 10px;
+        }
+        .content .text p{
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            height: 100%;
+        }
+        .stats{
+            display: flex;
+            text-align: center;
+            height: 100px;
+            margin: 100px 80px 0;
+            justify-content: space-between;
+        }
+        .stat{
+            background-color: #c688ec;
+            width : 200px;
+            border-radius: 10px;
+            text-align: left;
+            padding: 10px;
+            color: #fff;
+            box-shadow: 0 0 10px #c688ec;
+        }
+        .info{
+            display: flex;
+            background-color: #0b3dd4;
+            height: 400px;
+            margin: 100px 80px 0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .info .buttons{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 35%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .info .buttons .button{
+            background-color: #0b3dd4;
+            color: #fff;
+            padding: 10px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            width: 70%;
+            cursor: pointer;
+            height: 60px;
+        }
+        .info .buttons .clicked{
+            background-color: #b5c7f5;
+            color: #000;
+            font-weight: bold;
+        }
+        .info .info-text{
+            display: flex;
+            background-color: #ffffff;
+            width: 65%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .info-box{
+            position: relative;
+            width: 100%;
+            font-size: 16px;
+        }
+        .title{
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        .next-button{
+            float: right;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            height: 40px;
+            width: 100px;
+            border-radius: 5px;
+        }
+        .chat-icon {
+            height: 50px;
+            width: 50px;
+            position: fixed;
+            right: 100px;
+            bottom: 5px;
+            border-radius: 50%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgb(87, 85, 85);
+        }
+        .chat-icon i{
+            font-size: 30px;
+        }
+        .social-icons{
+            position: sticky;
+            top: 50px;
+            right: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            float:right;
+            
+        }
+        .social-icons a{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0;
+            color: white;
+            font-size: 20px;
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            background-color: #1ba226;
+            border-radius: 5px;
+        }
+        .social-icons a.facebook {
+            background-color: #3b5998;
+        }
+        .social-icons a.twitter {
+            background-color: #1da1f2;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">DAPPR</div>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Information</a>
+            <a href="">More</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-box" placeholder="Search....">
+            <i style="color:#bebcbc" class="fas fa-search"></i>
+        </div>
+        <div class="menu-icon">
+            <i style="font-size : 30px; color:#fff;" class="fas fa-bars"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div  class="content">
+            <div class="image">
+                <img src="./assets/img1.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>
+                    It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a .....
+                </p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div  class="stats">
+            <div class="stat" style="background-color: #4a74f3;">
+                <p>Total Question's</p>
+                <p>200,000</p>
+            </div>
+            <div class="stat" style="background-color: #6a4af3;">
+                <p>Total Answer's</p>
+                <p>105,000</p>
+            </div>
+            <div class="stat">
+                <p>Participated</p>
+                <p>10,000</p>
+            </div>
+            <div class="stat" style="background-color: #000;">
+                <p>Total Passed</p>
+                <p>6,000</p>
+            </div>
+        </div>
+        <div  class="info">
+            <div class="buttons">
+                <button class="button clicked">YOUR INFO</button>
+                <button class="button">BOOKMARKS</button>
+                <button class="button">SETTINGS</button>
+            </div>
+            <div  class="info-text">
+                <div class="info-box">
+                    <h2>Your information</h2>
+                    <p><span class="title">Name</span> : Atul Singhal</p>
+                    <p><span class="title">Email</span> : atul@gmail.com</p>
+                    <p><span class="title">Phone</span> : +91 8131424888</p>
+                    <p><span class="title">Marks</span> : 500.00</p>
+                    <button class="next-button">Next →</button>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <div class="chat-icon">
+        <i class="fas fa-comment"></i>
+    </div> 
+</body>
+</html>
