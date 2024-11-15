@@ -10,22 +10,25 @@
     <div class="calculator">
         <input type="text" id="display" disabled>
         <div class="buttons">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="appendToDisplay('/')">/</button>
-            <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="calculateResult()">=</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('0')">0</button>
+            
+            <button class="num-btn btn7" onclick="appendToDisplay('7')">7</button>
+            <button class="num-btn btn8" onclick="appendToDisplay('8')">8</button>
+            <button class="num-btn btn9" onclick="appendToDisplay('9')">9</button>
+            <button class="num-btn btn-del" onclick="removeLastDigit()">Del</button>
+            <button class="num-btn btn4" onclick="appendToDisplay('4')">4</button>
+            <button class="num-btn btn5" onclick="appendToDisplay('5')">5</button>
+            <button class="num-btn btn6" onclick="appendToDisplay('6')">6</button>
+            <button class="num-btn btn-plus" onclick="appendToDisplay('+')">+</button>
+            <button class="num-btn btn1" onclick="appendToDisplay('1')">1</button>
+            <button class="num-btn btn2" onclick="appendToDisplay('2')">2</button>
+            <button class="num-btn btn3" onclick="appendToDisplay('3')">3</button>
+            <button class="num-btn btn-neg" onclick="appendToDisplay('-')">-</button>
+            <button class="num-btn btn-dot" onclick="appendToDisplay('.')">.</button>
+            <button class="num-btn btn0" onclick="appendToDisplay('0')">0</button>
+            <button class="num-btn btn-div" onclick="appendToDisplay('/')">/</button>
+            <button class="num-btn btn-mul" onclick="appendToDisplay('*')">*</button>
+            <button class="num-btn btn-reset" onclick="clearDisplay()">Reset</button>
+            <button class="num-btn btn-equal" onclick="calculateResult()">=</button>
         </div>
     </div>
     <script src="script.js"></script>
