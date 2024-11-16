@@ -87,3 +87,8 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
+@media (max-width:480px){
+    .card{
+        flex-direction: column;
+    }
+}
